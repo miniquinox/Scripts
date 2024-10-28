@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Internship - ExamAi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Wrapper container for centering the content */
+        .wrapper {
+            width: 80%; /* Occupy 80% of the screen width */
+            margin: 0 auto; /* Center the content horizontally */
+            display: flex;
+            padding: 40px 0;
+        }
+
+        /* Left Sidebar (Fixed Box) */
+        .sidebar {
+            background-color: #f5f5f5;
+            width: 30%;  /* Sidebar occupies 30% of the wrapper */
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            position: fixed;  /* Sidebar stays in place */
+            top: 20px;  /* Keep it aligned with the top of the viewport */
+            left: 10%;  /* This ensures it's 10% away from the left of the screen to center it in the 80% content width */
+            height: auto;  /* Sidebar height ends where its content ends */
+        }
+
+        .sidebar img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;  /* Spacing below the logo */
+            border-radius: 8px;  /* Add 8px rounded corners to the image */
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #666;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar ul li i {
+            margin-right: 10px;
+            font-size: 22px; /* Larger Google Material Icons */
+        }
+
+        /* Sidebar Apply Button */
+        .apply-button {
+            display: inline-block;
+            background-color: #7d00ff; /* Use purple from the logo */
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 25px; /* Curved edges */
+            text-decoration: none;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .apply-button:hover {
+            background-color: #6600cc; /* Darken purple on hover */
+            cursor: pointer;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            width: 70%; /* Right content occupies the rest */
+            margin-left: 32%; /* Adjust right content to avoid overlap with sidebar */
+        }
+
+        /* Job Title */
+        .main-content h1 {
+            font-size: 36px;
+            color: #7d00ff; /* Purple from logo */
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Location Info */
+        .main-content p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Apply Button below Job Location */
+        .apply-position-button {
+            background-color: #7d00ff;
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .apply-position-button:hover {
+            background-color: #6600cc;
+            cursor: pointer;
+        }
+
+        /* Section Titles */
+        .main-content h3 {
+            font-size: 24px;
+            color: #7d00ff;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* Bullet Points */
+        .main-content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .main-content ul li {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .main-content ul strong {
+            font-weight: bold;
+        }
+
+        /* Apply Button at Bottom */
+        .bottom-apply-button {
+            background-color: #7d00ff;
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .bottom-apply-button:hover {
+            background-color: #6600cc;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Wrapper to center content and control layout -->
+    <div class="wrapper">
+
+        <!-- Sidebar (30% of the wrapper) -->
+        <div class="sidebar">
+            <img src="https://github.com/miniquinox/Portfolio/blob/master/ExamAi_logo.png?raw=true" alt="ExamAi Logo">
+            <ul>
+                <li><i class="material-icons">work</i> Data Analysis</li>
+                <li><i class="material-icons">location_on</i> Fully Remote</li>
+                <li><i class="material-icons">business</i> San Francisco HQ</li>
+                <li><i class="material-icons">attach_money</i> Non-paid</li>
+            </ul>
+            <a href="#" class="apply-button">Apply for Job</a>
+        </div>
+
+        <!-- Main Content (Scrollable, 70% of the wrapper) -->
+        <div class="main-content">
+            <div class="job-details-header">Job Details</div>
+            <h1>Data Analyst Internship (Non-Paid)</h1>
+            <p><strong>Location:</strong> San Francisco, Remote</p>
+
+            <!-- Apply Button After Location -->
+            <a href="#" class="apply-position-button">Apply for this position</a>
+
+            <h3>Overview</h3>
+            <p>Are you passionate about data and eager to learn in a startup environment? We're looking for a motivated Data Analyst intern to join us at <strong>ExamAi</strong> and work closely with our CEO on exciting projects.</p>
+            <p>This internship is a great opportunity to get hands-on experience with data analysis, web scraping, and database creation, while contributing to a fast-growing company. Even though this is a non-paid position, you'll gain invaluable experience and build skills that will make you stand out in your future career.</p>
+
+            <h3>What You’ll Do</h3>
+            <ul>
+                <li><strong>Analyze data:</strong> Help us understand patterns and insights from the data we collect.</li>
+                <li><strong>Create databases:</strong> Organize and structure data that supports our decision-making and strategy.</li>
+                <li><strong>Web scraping:</strong> Assist in gathering useful information from the web to keep us ahead in the game.</li>
+                <li><strong>Work closely with the CEO:</strong> You'll have the chance to collaborate directly with our CEO on high-impact tasks that shape the future of ExamAi.</li>
+            </ul>
+
+            <h3>What We’re Looking For</h3>
+            <ul>
+                <li><strong>Curiosity and eagerness to learn:</strong> You don’t need to be an expert, but you should be excited about diving into data and learning new tools.</li>
+                <li><strong>Basic knowledge of data analysis tools:</strong> If you’re familiar with tools like Excel, Python, or any data-related software, that’s a plus!</li>
+                <li><strong>Problem-solving mindset:</strong> You enjoy figuring things out and coming up with solutions.</li>
+                <li><strong>Self-motivated and independent:</strong> You'll have guidance, but we're looking for someone who can also take initiative.</li>
+            </ul>
+
+            <h3>What You’ll Gain</h3>
+            <ul>
+                <li><strong>Real-world experience:</strong> Work on meaningful projects that make a difference in our business.</li>
+                <li><strong>Skill development:</strong> Learn and improve your data analysis, database creation, and web scraping abilities.</li>
+                <li><strong>Mentorship:</strong> Receive direct guidance from our CEO and contribute to a fast-growing tech company.</li>
+            </ul>
+
+            <h3>How to Apply</h3>
+            <p>Interested in this opportunity? We’d love to hear from you! Click the button below to apply, and let’s chat about how you can be a part of the ExamAi team.</p>
+
+            <a href="#" class="bottom-apply-button">Apply for this position</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
